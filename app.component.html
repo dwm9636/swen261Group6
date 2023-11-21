@@ -1,0 +1,22 @@
+<app-top-bar></app-top-bar>
+
+<div class="menu-container" clickOutside (clickOutside)="clickedOutside()">
+  <div class="menu-toggler" (click)="toggleMenu()">Explore Dubai</div>
+  <div class="menu" *ngIf="isMenuOpened">
+    <div class="menu-item">About Dubai</div>
+    <div class="menu-item">Weddings & Celebrations</div>
+    <div class="menu-item">Curators</div>
+    <div class="menu-item">Dubai Neighbourhoods</div>
+    <div class="menu-item">Local culture</div>
+    <div class="menu-item">Beyond Dubai</div>
+    <div class="menu-item">Adventures in Hatta</div>
+    <div class="menu-item">Discover Al Marmoom</div>
+  </div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <p style="color: white;">Terms of use | Privacy Notice | Copyright 2023. This site is managed by Team - 6 of SWEN.261.600. Site last updated [9/11/2023]</p>
+</div>
