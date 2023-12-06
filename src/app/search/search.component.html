@@ -1,0 +1,15 @@
+<!-- search.component.html -->
+<div class="search-container">
+  <input [(ngModel)]="searchTerm" placeholder="Search...">
+  <button (click)="performSearch()">Search</button>
+</div>
+
+<div *ngFor="let result of searchResults" class="result-item">
+  <p><strong>Name:</strong> {{ result.name }}</p>
+    <p><strong>Class:</strong> {{ result.class }}</p>
+    <p><strong>Website:</strong> {{ result.website }}</p>
+    <p><strong>Phone Number:</strong> {{ result.phoneNumber }}</p>
+    <p><strong>Price Point:</strong> {{ result.pricePoint }}</p>
+    <p><strong>Tags:</strong> {{ result.tags }}</p>
+    <p><strong>Medical Center:</strong> {{ result.medicalCenter }}</p>
+</div>

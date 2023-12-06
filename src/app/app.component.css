@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+.mainContainer {
+    background-image: url('../assets/img/backgroundImage-V.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto
+}
+
+.header-container {
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+  }
+  
+  .header-text {
+    font-size: 32px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Set text color to white */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for style */
+    margin: 0; /* Remove default margin */
+    margin-top: 150px;
+  }

@@ -1,0 +1,13 @@
+<div>
+    <p>{{ registrationMessage }}</p>
+    <h2>Register</h2>
+    <form (ngSubmit)="register()">
+      <label for="username">Username:</label>
+      <input id="username" name="username" [(ngModel)]="user.username" required>
+  
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="password" [(ngModel)]="user.password" required>
+  
+      <button type="submit">Register</button>
+    </form>
+  </div>
